@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% load custom_tags %}
+
+    <h2>Сегодняшняя дата: {% current_date %}</h2>
+
+    <p>{% truncate_text "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lectus nibh, blandit non porttitor et, placerat id urna. Nunc leo erat, accumsan ut lorem et, ullamcorper ultrices nulla." 20 %}</p>
+
+    <h3>Список пользователей:</h3>
+    {% show_users user_list %}
+
+</body>
+</html>
